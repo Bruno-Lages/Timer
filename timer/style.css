@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    color: #fff;
+}
+body{
+    background-color: rgb(107, 44, 223);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+main{
+    transform: translateY(-10%);
+    position: relative;
+    width: 60%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: solid #C9DB03 thick;
+    background-color: rgb(73, 186, 221);
+}
+.timer{
+    text-align: center;
+    font-size: 6rem;
+    padding: 10% 0%;
+    font-family: 'Roboto Mono','Oswald', sans-serif;
+    height: 70%;
+    transition: color 0.2s ease-out;
+}
+.timer-freezed{
+    color: #B4027B;
+}
+.buttons-container{
+    display: flex;
+    justify-content:space-around;
+    width: 90%;
+    height: 20%;
+}
+.start-button{
+    background-image: url(icons/vectorpaint-start-off.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 30%;
+    cursor:pointer;
+    transition: background-image 1s ease;
+}
+.start-button-on{
+    background-image: url(icons/vectorpaint-start.svg);
+}
+.pause-button{
+    background-image: url(icons/vectorpaint-off.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 30%;
+    cursor:pointer;
+    transition: background-image 1s ease;
+}
+.pause-button-on{
+    background-image: url(icons/vectorpaint.svg);
+}
+.reset-button{
+    background-image: url(icons/vectorpaint-restart-off.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 30%;
+    cursor:pointer;
+    transition: background-image 1s ease;
+}
+.reset-button-on{
+    background-image: url(icons/vectorpaint-restart.svg);
+}
