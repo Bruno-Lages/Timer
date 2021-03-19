@@ -14,7 +14,6 @@ body{
 }
 main{
     transform: translateY(-10%);
-    position: relative;
     width: 60%;
     height: 50%;
     display: flex;
@@ -77,4 +76,19 @@ main{
 }
 .reset-button-on{
     background-image: url(icons/vectorpaint-restart.svg);
+}
+
+@media screen and (max-width: 780px){
+    main{
+        width: 90%;
+    }
+    .timer{
+        font-size: 3rem;
+        padding: 0%;
+    }
+}
+@media screen and (max-height: 420px){
+    .timer{
+        padding: 0%;
+    }
 }
